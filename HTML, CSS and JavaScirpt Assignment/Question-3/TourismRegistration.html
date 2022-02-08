@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Junagadh Tourism Registration Page</title>
+<style>
+	.header1
+	{
+		background-color: #DAA520;
+	}
+</style>
+</head>
+<body bgcolor="#EED8AE">
+<div class="header1">
+<h1><center><font color="red">Welcome To Junagadh City</font></center></h1>
+<a href="TourismHome.html" target="blank">Home</a> &nbsp; &nbsp;
+<a href="TourismHeritage.html" target="blank">Heritage</a> &nbsp; &nbsp;
+<a href="TourismHotel.html" target="blank">Hotel Booking</a> &nbsp; &nbsp;
+<a href="TourismGallery.html" target="blank">Gallery</a> &nbsp; &nbsp;
+<a href="TourismRegistration.html" target="blank">Registration Form</a> &nbsp; &nbsp;
+</div>
+<div>
+<h2> Registration Form </h2>
+<form onsubmit="return checkData();" method="post" action="">
+<table border=0>
+	<tr>
+		<td><label for="userid">User Id:<span style="color: red;"> *</span> </label></td>
+		<td><input type="text" id="userid" name="userid" minlength="5" maxlength="12" required></td>
+	</tr>
+	<tr>
+		<td><label for="password">Password:<span style="color: red;"> *</label></td>
+		<td><input type="password" id="password" name="password" minlength="7" maxlength="12" required></td>
+	</tr>
+	<tr>
+		<td><label for="name">Name:<span style="color: red;"> *</label></td>
+		<td><input type="text" id="name" name="name" pattern="[A-Za-z]+" required></td>
+	</tr>
+	<tr>
+		<td><label for="address">Address</td>
+		<td><input type="text" id="address" name="address"></td>
+	</tr>
+	<tr>
+		<td><label for=country">Country <span style="color: red;"> *</label></td>
+		<td><select required>
+			<option value="">Please select a country</option>
+			<option value="india">India</option>
+			<option value="usa">United States Of America</option>
+			<option value="germany">Germany</option>
+			<option value="uk">United Kingdom</option>
+			<option value="russia">Russia</option>
+			<option value="china">China</option>
+			<option value="japan">Japan</option>
+			<option value="south korea">South Korea</option>
+			<option value="pakistan">Pakistan</option>
+		 </select></td>
+	</tr>
+	<tr>
+		<td><label for="zipcode">ZIP Code:<span style="color: red;"> *</label></td>
+		<td><input type="text" id="zipcode" name="zipcode" pattern="[0-9]+" required></td>
+	</tr>
+	<tr>
+		<td><label for="email">EMail:<span style="color: red;"> *</label></td>
+		<td><input type="email" id="email" name="email" required></td>
+	</tr>
+	<tr>
+		<td><label for="gender">Gender:<span style="color: red;"> *</label></td>
+		<td><input type="radio" name="gender" value="male" required>Male
+		        <input type="radio" name="gender" value="female" required>Female</td>
+	</tr>
+	<tr>
+		<td><label for="language">Language:<span style="color: red;"> *</label></td>
+		<td><input type="checkbox" id="1" value="english">English
+		       <input type="checkbox" id="2" value="non-english" >Non-English</td>
+	</tr>
+	<tr>
+		<td><label for="about">About</label></td>
+		<td><textarea></textarea></td>
+	</tr>
+	<tr>
+		<td colspan=2><center><input type="submit" name="submit" value="submit"></center></td>
+		<script>
+			function checkData()
+			{
+  				var a = 0;
+
+  				if(a == 0)
+  				{
+   					 return confirm("Do you want to submit?");
+  				}
+  				else
+   				{
+      					alert('Please fill all the fields');
+      					return false;
+   				}  
+			}
+		</script>
+	</tr>
+</table>
+</form>
+</div>
+			
+
+			
+
+
